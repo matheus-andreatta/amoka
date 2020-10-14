@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Seu site é agora!">
+  <meta name="author" content="Matheus Andreatta">
+  <link rel="shortcut icon" href="./img/favicon.ico" />
+  <title>AmoKa</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+  <style>
+    video#bgvid {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+    }
+
+
+    .callout{
+      background: linear-gradient(90deg,rgba(255,255,255,.1) 0,rgba(255,255,255,.1) 100%),url(./img/bg-callout.png);
+      background-position: top right;
+      background-repeat: no-repeat;
+      background-size: contain;
+      padding: 5rem 0 15rem;
+    }
+
+    .callout h2 {
+      font-size: 4rem;
+      font-weight: 700;
+      display: block;
+      max-width: 35rem;
+    }
+
+    .callout .container{
+      width: 400px;
+      margin-left: 200px;
+    }
+
+    .callout .container img{
+      cursor: pointer;
+    }
+
+
+    .callout .container .d-flex{
+      justify-content: space-between;
+      margin-top: 30px;
+      font-size: 2rem;
+    }
+
+    .callout .container .d-flex i:hover{
+      color:#9cd2cc;
+      transition: 0.2s;
+      cursor: pointer;
+    }
+
+
+    @media (max-width:768px){
+      .callout h2{
+        font-size: 4rem;
+      }
+      .content-section{
+        padding-top:5rem;
+      }
+      .content-section .btn-light{
+        width: 250px;
+        margin-right: 0!important;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="./portfolio.html">Portfólio</a>
+      </li>
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="./quem-somos.html">Quem somos</a>
+      </li>
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="./blog">Blog</a>
+      </li>
+    </ul>
+  </nav>
+ 
+ 
+
+  <!-- Callout -->
+  <section class="callout">
+    <div class="container text-left mr-auto">
+      <h4 class="mb-2 mr-auto ml-0">FREELANCER QUE FAZEM SEU SITE,<br> <em>MESMO!</em></h4>
+      <img id="img-logo" onmouseover="hoverImage()" width="350px" src="./img/logo/logo-black.png" alt="" srcset="">
+      <div class="d-flex">
+        <i class="fab fa-instagram"></i>        
+        <i class="fab fa-linkedin-in"></i>        
+        <i class="fab fa-whatsapp"></i>
+        <i class="far fa-envelope"></i>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    let img = document.getElementById('img-logo');
+
+    img.addEventListener("mouseover", hoverImage);
+    img.addEventListener("mouseout", outImage);
+
+    function hoverImage(){
+      img.src = "./img/logo/logo-blue.png";
+    }
+    function outImage(){
+      img.src = "./img/logo/logo-black.png";
+    }
+
+
+
+  </script>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
+
+
+
+</body>
+
+</html>
