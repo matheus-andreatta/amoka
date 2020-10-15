@@ -50,6 +50,7 @@
 
     .callout .container img{
       cursor: pointer;
+       width: 350px;
     }
 
 
@@ -64,12 +65,39 @@
       transition: 0.2s;
       cursor: pointer;
     }
+    
 
 
     @media (max-width:768px){
+
+      .callout{
+        background-position: bottom;
+      }
+
       .callout h2{
         font-size: 4rem;
       }
+
+      .callout .container{
+        margin-left: 0;
+        width: 100%;
+        text-align: center!important;
+      }
+
+      .callout .container h4{
+        font-size: 2rem;
+      }
+
+      .callout .container img{
+        width: 250px;
+        cursor: pointer;
+        margin: 0 auto;
+      }
+
+      .callout .container .d-flex{
+        padding:0 30px;
+      }
+
       .content-section{
         padding-top:5rem;
       }
@@ -106,9 +134,9 @@
 
   <!-- Callout -->
   <section class="callout">
-    <div class="container text-left mr-auto">
-      <h4 class="mb-2 mr-auto ml-0">FREELANCER QUE FAZEM SEU SITE,<br> <em>MESMO!</em></h4>
-      <img id="img-logo" onmouseover="hoverImage()" width="350px" src="./img/logo/logo-black.png" alt="" srcset="">
+    <div class="container text-left">
+      <h4 class="mb-2">FREELANCER QUE FAZEM SEU SITE,<br> <em>MESMO!</em></h4>
+      <img id="img-logo" onmouseover="hoverImage()"  src="./img/logo/logo-black.png" alt="" srcset="">
       <div class="d-flex">
         <i class="fab fa-instagram"></i>        
         <i class="fab fa-linkedin-in"></i>        
@@ -117,7 +145,6 @@
       </div>
     </div>
   </section>
-
   <script>
     let img = document.getElementById('img-logo');
 
